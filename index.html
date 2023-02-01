@@ -8,9 +8,20 @@
 
     <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     <div id="app">
+
+        <button @click="generateEmail()">
+            Genera Email
+        </button>
+
+        <ol>
+            <li v-for="email in emailList">
+                {{ email }}
+            </li>
+        </ol>
 
     </div>
     <!-- VUE -->
